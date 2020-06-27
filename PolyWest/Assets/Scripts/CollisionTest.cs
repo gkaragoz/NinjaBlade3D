@@ -13,6 +13,7 @@ public class CollisionTest : MonoBehaviour
         if (other.tag == "Enemy")
         {
             playerMove.KillEnemy(other.gameObject);
+            playerMove.PlayVFX(other.gameObject.transform.position);
         }
         if (other.tag == "EnemyDeathPosition")
         {

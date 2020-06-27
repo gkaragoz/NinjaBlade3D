@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     public SwipeInput swipeInput;
     public GameManager gameManager;
 
+    public VFXSplatterOnCollision vfx;
     public float playerSpeed;
     public void MoveToPos(Vector3 targetPos)
     {
@@ -61,5 +62,11 @@ public class PlayerMove : MonoBehaviour
     {
         StopMovement();
         playerAnim.SetTrigger("Die");
+    }
+
+    public void PlayVFX(Vector3 pos)
+    {
+        vfx.transform.position = pos + Vector3.up;
+        vfx.Play(Vector3.forward, 10, 15);
     }
 }

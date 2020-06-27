@@ -17,23 +17,23 @@ public class UIManager : MonoBehaviour
 
     public void OpenFailPanel()
     {
-        succesPanel.SetActive(true);
+        failPanel.SetActive(true);
     }
     public void CloseFailPanel()
     {
-        succesPanel.SetActive(false);
+        failPanel.SetActive(false);
 
     }
 
     public void OpenSuccesPanel()
     {
-        failPanel.SetActive(true);
+        succesPanel.SetActive(true);
 
     }
 
     public void CloseSuccesPanel()
     {
-        failPanel.SetActive(false);
+        succesPanel.SetActive(false);
 
     }
 

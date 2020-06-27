@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -838,6 +838,7 @@ MonoBehaviour:
   playerAnim: {fileID: 1294063932}
   swipeInput: {fileID: 654472594}
   gameManager: {fileID: 1502918073}
+  vfx: {fileID: 837057556}
   playerSpeed: 10
 --- !u!1001 &748790426
 PrefabInstance:
@@ -1193,6 +1194,18 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 1137077816}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &837057556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5328013371355610420, guid: 47bed247e9b45114fa57a00972ec3501,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111516180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f09bede31c94804e909fbe5ebc9c7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &891121687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,6 +4076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483a435062f9379478b244b39beaabec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiManager: {fileID: 2025374961}
   enemies:
   - {fileID: 113547635}
 --- !u!1 &1583766109
@@ -4883,6 +4897,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425459709846825737, guid: 47bed247e9b45114fa57a00972ec3501,
+        type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 20480
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47bed247e9b45114fa57a00972ec3501, type: 3}
