@@ -62,6 +62,7 @@ public class PlayerMove : MonoBehaviour
     {
         StopMovement();
         playerAnim.SetTrigger("Die");
+        gameManager.Die();
     }
 
     public void PlayVFX(Vector3 pos)

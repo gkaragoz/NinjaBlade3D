@@ -20,4 +20,11 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void Die()
+    {
+        Debug.Log("Level Failed");
+        uiManager.OpenFailPanel();
+        return;
+    }
 }
